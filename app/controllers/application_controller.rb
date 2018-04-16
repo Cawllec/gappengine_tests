@@ -5,7 +5,6 @@ class ApplicationController < ActionController::Base
       :"Google App Engine" => true,
       :"Rails" => Rails::VERSION::STRING
     }
-    out[:Bugsnag] = Bugsnag::VERSION unless Bugsnag.nil?
     render json: out
   end
 
